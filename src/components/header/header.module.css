@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+
+.nav li {
+  font-weight: 300;
+}
+
+.nav li:hover {
+  color: #009688;
+  cursor: pointer;
+}
+
+.nav li button {
+  background-color: #009688;
+  border: none;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav li button:hover {
+  background-color: #26a69a;
+}

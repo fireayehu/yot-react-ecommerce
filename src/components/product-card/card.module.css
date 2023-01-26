@@ -1,0 +1,23 @@
+.container {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+}
+
+.content {
+  padding: 10px 15px;
+}
+
+.category {
+  background-color: #673ab7;
+  padding: 8px 10px;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+}
