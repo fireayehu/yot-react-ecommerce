@@ -21,6 +21,18 @@
   background-color: #b2dfdb;
 }
 
+.selectedCategory {
+  background-color: #b2dfdb;
+}
+
+.loading {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

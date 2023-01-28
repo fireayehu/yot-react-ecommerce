@@ -6,6 +6,12 @@
   background-color: #fff;
 }
 
+.logo {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
 .nav {
   display: flex;
   gap: 20px;

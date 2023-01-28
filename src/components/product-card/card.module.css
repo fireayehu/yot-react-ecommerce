@@ -3,6 +3,7 @@
   width: 100%;
   border-radius: 12px;
   padding: 10px;
+  cursor: pointer;
 }
 
 img {
@@ -15,7 +16,7 @@ img {
 }
 
 .category {
-  background-color: #673ab7;
+  background-color: #009688;
   padding: 8px 10px;
   color: #fff;
   border-radius: 6px;
