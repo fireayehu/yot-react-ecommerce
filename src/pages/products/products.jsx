@@ -3,6 +3,7 @@ import styles from "./products.module.css";
 import { Card } from "../../components/product-card/card";
 import { ProductsContext } from "../../context/products.context";
 import { Loading } from "../../components/loading/loading";
+import { CategoryContext } from "../../context/category.context";
 
 const categories = [
   "electronics",
@@ -11,30 +12,29 @@ const categories = [
   "women's clothing",
 ];
 export const ProductsPage = () => {
-  const [selecteCategory, setSelectedCategory] = useState(null);
   const { products, loading, fetchProducts, fetchProductsByCategory } =
     useContext(ProductsContext);
-
+  const { category, setCategory } = useContext(CategoryContext);
   useEffect(() => {
-    if (selecteCategory) {
-      fetchProductsByCategory(selecteCategory);
+    if (category) {
+      fetchProductsByCategory(category);
     } else {
       fetchProducts();
     }
-  }, [selecteCategory]);
+  }, [category]);
 
   return (
     <div className={styles.container}>
       <div className={styles.categories}>
-        {categories.map((category) => (
+        {categories.map((item) => (
           <div
-            key={category}
+            key={item}
             className={`${styles.category} ${
-              category === selecteCategory ? styles.selectedCategory : ""
+              item === category ? styles.selectedCategory : ""
             }`}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => setCategory(item)}
           >
-            <p>{category}</p>
+            <p>{item}</p>
           </div>
         ))}
       </div>
